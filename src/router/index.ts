@@ -1,12 +1,18 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
+import Demo from "../views/Demo.vue";
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
     path: "/",
+    name: "Vue Demo Project",
+    component: Demo
+  },
+  {
+    path: "/home",
     name: "Home",
     component: Home
   },
