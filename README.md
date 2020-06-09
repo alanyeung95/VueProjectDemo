@@ -28,6 +28,10 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Install Vueifty
+```
+vue add vuetify
+```
 
 # Q & A
 ## Q1: What is ESLint and why we need to use it?
@@ -35,3 +39,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Q2: Why we need to use typescript rather than pure javascript?
 ## A2: Typescript can let use to define an interface and it will do a type validation during compilation. For example, it can help us to debug after we update our schema
+
+## Q3: What is Vuetify?
+## A3: Vuetif is the #1 component library for Vue.js and has been in active development since 2016.
