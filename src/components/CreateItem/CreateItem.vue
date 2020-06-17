@@ -18,7 +18,6 @@ import { CreateItemParams, createItem } from "@/components/services/item";
 @Component({})
 export default class CreateItem extends Vue {
   async handleSubmit() {
-    console.log("testing");
     const response = await createItem({
       name: "123",
       description: "hello world!!!!"

@@ -11,9 +11,9 @@ export interface CreateItemParams {
 }
 
 export async function createItem(params: CreateItemParams): Promise<string> {
-  const { data } = await httpClient.post(`${config.apiRootUrl}/items`, {
-    name: "string",
-    description: "123"
+  const { data } = await httpClient.post(`${config.apiRootUrl}/items/`, {
+    name: params.name,
+    description: params.description
   });
 
   return data;
