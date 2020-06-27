@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <DemoComponent msgFromParent="Welcome to My Demo Vue.js App" />
+    <DemoComponent msg-from-parent="Welcome to My Demo Vue.js App" />
     <download-button />
     <create-item class="Demo__CreateItem" />
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 // @ is an alias to /src
-import DemoComponent from "@/components/DemoComponent.vue";
+import DemoComponent from "@/components/DemoComponent";
 import DownloadButton from "@/components/DownloadButton";
 import CreateItem from "@/components/CreateItem";
 import { Component, Prop } from "vue-property-decorator";
