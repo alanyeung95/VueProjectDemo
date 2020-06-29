@@ -7,5 +7,10 @@ module.exports = {
     // process `*.vue` files with `vue-jest`
     ".*\\.(vue)$": "vue-jest"
   },
+  moduleNameMapper: {
+    // in .vue file, map @/xxx to <rootDir>/src/xxx
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "\\.(css)$": "identity-obj-proxy"
+  },
   testRegex: "src/.*.spec\\.(ts|tsx|js)$"
 };

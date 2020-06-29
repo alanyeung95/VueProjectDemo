@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DemoComponent.vue renders props.msg when passed 1`] = `
+<div
+  class="hello"
+  mockmessage="Demo message"
+>
+  <h1>
+    computed message
+  </h1>
+   
+  <h1>
+    
+  </h1>
+</div>
+`;

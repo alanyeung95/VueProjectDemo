@@ -1,12 +1,13 @@
 import { Wrapper, shallowMount } from "@vue/test-utils";
 import DemoComponent from "./DemoComponent.vue";
+import { mockDemoMessage } from "@/mocks/models";
 
 describe("DemoComponent.vue", () => {
   test("renders props.msg when passed", () => {
-    const msgFromParent = "new message1";
+    const mockMessage = mockDemoMessage();
     const wrapper = shallowMount(DemoComponent, {
-      propsData: { msgFromParent },
+      propsData: { mockMessage },
     });
-    expect(wrapper.text()).toMatch(msgFromParent);
+    expect(wrapper.vm.$el).toMatchSnapshot();
   });
 });
