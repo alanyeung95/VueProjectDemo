@@ -9,6 +9,7 @@ const config = {
 };
 
 config.devServer.proxy["^/api/"] = {
+  // using docker-compose network
   target: "http://app.demo.network/",
   secure: false,
   pathRewrite: {

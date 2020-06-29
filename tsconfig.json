@@ -1,4 +1,7 @@
+// ref: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+// The tsconfig.json file specifies the root files and the compiler options required to compile the project.
 {
+  // The "compilerOptions" property can be omitted, in which case the compiler’s defaults are used.
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
