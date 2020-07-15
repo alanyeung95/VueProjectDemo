@@ -1,5 +1,13 @@
 # vue-project-demo
 
+This repo is one of the microservices. Other related repo is <b>GoProjectDemo</b> and <b>ElasticSearchDemo</b>
+
+Please setup the project under this order:
+
+1. GoProjectDemo
+2. ElasticSearchDemo
+3. vue-project-demo
+
 ## Project create
 
 ```
