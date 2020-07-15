@@ -46,6 +46,11 @@ vue add vuetify
 
 Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it. The primary reason ESLint was created was to allow developers to create their own linting rules. It can also be usesd with githook so that it can check your code before commit automatically.
 
+1.  Check syntax before running
+2.  Prettier plugin can format your code
+3.  Will suggest best practise code like using `let` instead of `var`, prefer `===` rather than `==`
+4.  Warning unused import
+
 ## Q2: Why we need to use typescript rather than pure javascript?
 
 Typescript can let use to define an interface (e.g. request param) and it will do a type validation during compilation. For example, it can help us to debug after we update our schema
