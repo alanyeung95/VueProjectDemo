@@ -6,10 +6,11 @@ import Vuetify from "vuetify";
 
 Vue.config.productionTip = false;
 Vue.use(Vuetify);
+
 const vuetifyOptions = {};
 new Vue({
   router,
   store,
   vuetify: new Vuetify(vuetifyOptions),
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
