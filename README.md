@@ -1,5 +1,13 @@
 # vue-project-demo
 
+This repo is one of the microservices. Other related repo is <b>GoProjectDemo</b> and <b>ElasticSearchDemo</b>
+
+Please setup the project under this order:
+
+1. GoProjectDemo
+2. ElasticSearchDemo
+3. vue-project-demo
+
 ## Project create
 
 ```
@@ -44,15 +52,20 @@ vue add vuetify
 
 ## Q1: What is ESLint and why we need to use it?
 
-## A1: Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it. The primary reason ESLint was created was to allow developers to create their own linting rules. It can also be usesd with githook so that it can check your code before commit automatically.
+Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it. The primary reason ESLint was created was to allow developers to create their own linting rules. It can also be usesd with githook so that it can check your code before commit automatically.
+
+1.  Check syntax before running
+2.  Prettier plugin can format your code
+3.  Will suggest best practise code like using `let` instead of `var`, prefer `===` rather than `==`
+4.  Warning unused import
 
 ## Q2: Why we need to use typescript rather than pure javascript?
 
-## A2: Typescript can let use to define an interface (e.g. request param) and it will do a type validation during compilation. For example, it can help us to debug after we update our schema
+Typescript can let use to define an interface (e.g. request param) and it will do a type validation during compilation. For example, it can help us to debug after we update our schema
 
 ## Q3: What is Vuetify?
 
-## A3: Vuetif is the #1 component library for Vue.js and has been in active development since 2016
+Vuetif is the #1 component library for Vue.js and has been in active development since 2016
 
 # Notes
 
