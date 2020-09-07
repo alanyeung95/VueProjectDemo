@@ -1,6 +1,6 @@
 # vue-project-demo
 
-This repo is one of the microservices. Other related repo is <b>[go-project-demo](https://github.com/alanyeung95/go-project-demo)</b>  and <b>[elasticsearch-monstache-demo](https://github.com/alanyeung95/ elasticsearch-monstache-demo)</b>
+This repo is one of the microservices. Other related repo is <b>[go-project-demo](https://github.com/alanyeung95/go-project-demo)</b>  and <b>[elasticsearch-monstache-demo](https://github.com/alanyeung95/elasticsearch-monstache-demo)</b>
 
 Please setup the project under this order:
 
