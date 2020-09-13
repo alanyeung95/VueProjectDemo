@@ -4,10 +4,12 @@
   </v-app>
 </template>
 
-<style>
+<style lang="scss">
+@import '~vuetify/dist/vuetify.min.css';
+
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  //  -webkit-font-smoothing: antialiased;
+  //  -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
 </style>
