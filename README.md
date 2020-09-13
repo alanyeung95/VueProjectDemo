@@ -8,13 +8,13 @@ Please setup the project under this order:
 3. vue-project-demo
 
 # Use-case analysis
-## Add product item
+## Add product items
 <img src="./doc/input.png" alt="drawing" width="300"/>
 
-## List item in search view
+## List items in search view
 <img src="./doc/list.png" alt="drawing" width="800"/>
 
-## Search item by description text
+## Search items by product description
 <img src="./doc/search.png" alt="drawing" width="800"/>
 
 This simple has demostrate how these three microservices (<b>vue-project-demo</b>, <b>[go-project-demo](https://github.com/alanyeung95/go-project-demo)</b>  and <b>[elasticsearch-monstache-demo](https://github.com/alanyeung95/elasticsearch-monstache-demo)</b>) work together
