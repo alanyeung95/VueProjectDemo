@@ -16,7 +16,7 @@
       </v-tab-item>
       <v-tab-item>
         <v-card flat>
-          <v-card-text>Contents for Item 2 go here</v-card-text>
+          <search-item class="Demo__SearchItem" />
         </v-card>
       </v-tab-item>
       <v-tab-item>
@@ -34,13 +34,15 @@ import DemoComponent from '@/components/DemoComponent'
 import DownloadButton from '@/components/DownloadButton'
 import { Component, Prop } from 'vue-property-decorator'
 import CreateItem from '@/components/CreateItem'
+import SearchItem from '@/components/SearchItem'
 
 export default {
   name: 'Demo',
   components: {
     DemoComponent,
     DownloadButton,
-    CreateItem
+    CreateItem,
+    SearchItem
   }
 }
 </script>
@@ -48,6 +50,10 @@ export default {
 <style lang="scss" scoped>
 .Demo {
   &__CreateItem {
+    display: inline-block;
+  }
+
+  &__SearchItem {
     display: inline-block;
   }
 }

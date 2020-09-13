@@ -1,3 +1,4 @@
 export default {
-  apiRootUrl: "/api"
-};
+  apiRootUrl: '/api',
+  searchRootUrl: '/search'
+}

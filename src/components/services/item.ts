@@ -28,3 +28,35 @@ export async function createItem(params: CreateItemParams): Promise<string> {
 
   return data
 }
+
+export interface SearchItemParams {
+  description: string
+}
+
+export async function searchItem(params: SearchItemParams): Promise<string> {
+  const { data } = await httpClient.post(
+    `${config.searchRootUrl}/domain_items/_search/`,
+    queryESByDescription(params.description)
+  )
+  return data
+}
+
+interface IDataNode {
+  query: {
+    terms: {
+      description: string
+    }
+  }
+}
+
+export function queryESByDescription(param: string): JSON {
+  const a = {
+    query: {
+      terms: {
+        description: [param]
+      }
+    }
+  }
+  var jsonString = JSON.stringify(a)
+  return JSON.parse(jsonString)
+}
