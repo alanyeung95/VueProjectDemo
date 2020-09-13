@@ -17,7 +17,7 @@ Please setup the project under this order:
 ## Search items by product description
 <img src="./doc/search.png" alt="drawing" width="800"/>
 
-This simple has demostrate how these three microservices (<b>vue-project-demo</b>, <b>[go-project-demo](https://github.com/alanyeung95/go-project-demo)</b>  and <b>[elasticsearch-monstache-demo](https://github.com/alanyeung95/elasticsearch-monstache-demo)</b>) work together
+This simple use case has demostrated how these three microservices (<b>vue-project-demo</b>, <b>[go-project-demo](https://github.com/alanyeung95/go-project-demo)</b>  and <b>[elasticsearch-monstache-demo](https://github.com/alanyeung95/elasticsearch-monstache-demo)</b>) work together
 
 Here is the detail flow:
 1. Input data from Vue.js to mongoDB and send API request
