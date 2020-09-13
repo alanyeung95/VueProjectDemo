@@ -1,7 +1,9 @@
 <template>
   <div class="Home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <DemoComponent msg-from-parent="Welcome to My Demo Vue.js App" />
+    <DemoComponent
+      msg-from-parent="Welcome to My Demo Vue.js App (value from parent component)"
+    />
 
     <v-tabs :centered="true">
       <v-tab>Add item</v-tab>

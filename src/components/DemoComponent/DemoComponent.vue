@@ -6,14 +6,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class DemoComponent extends Vue {
-  @Prop() private msgFromParent!: string;
+  @Prop() private msgFromParent!: string
 
   get testingMessage() {
-    return "computed message";
+    return 'Hi (computed value) '
   }
 }
 </script>
