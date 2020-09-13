@@ -8,6 +8,8 @@ export function getDownloadItemUrl(id: string): string {
 export interface CreateItemParams {
   name: string
   description: string
+  modelNumber: string
+  price: number
 }
 
 const requestConfig = {
@@ -21,7 +23,9 @@ export async function createItem(params: CreateItemParams): Promise<string> {
     `${config.apiRootUrl}/items/`,
     {
       name: params.name,
-      description: params.description
+      description: params.description,
+      modelNumber: params.modelNumber,
+      price: params.price
     },
     requestConfig
   )
@@ -37,6 +41,14 @@ export async function searchItem(params: SearchItemParams): Promise<string> {
   const { data } = await httpClient.post(
     `${config.searchRootUrl}/domain_items/_search/`,
     queryESByDescription(params.description)
+  )
+  return data
+}
+
+export async function searchAllItems(): Promise<JSON> {
+  const { data } = await httpClient.post(
+    `${config.searchRootUrl}/domain_items/_search/`,
+    null
   )
   return data
 }

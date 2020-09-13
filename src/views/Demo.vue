@@ -4,11 +4,13 @@
     <DemoComponent
       msg-from-parent="Welcome to My Demo Vue.js App (value from parent component)"
     />
-
+    <br />
     <v-tabs :centered="true">
       <v-tab>Add item</v-tab>
       <v-tab>Search item</v-tab>
+      <!--
       <v-tab>Download item</v-tab>
+      -->
       <v-tab-item>
         <v-card flat>
           <create-item class="Demo__CreateItem" />
@@ -19,11 +21,13 @@
           <search-item class="Demo__SearchItem" />
         </v-card>
       </v-tab-item>
+      <!--
       <v-tab-item>
         <v-card flat>
           <download-button />
         </v-card>
       </v-tab-item>
+      -->
     </v-tabs>
   </div>
 </template>
@@ -40,7 +44,7 @@ export default {
   name: 'Demo',
   components: {
     DemoComponent,
-    DownloadButton,
+    // DownloadButton,
     CreateItem,
     SearchItem
   }
